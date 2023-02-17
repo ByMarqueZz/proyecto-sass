@@ -1,0 +1,15 @@
+.seccion1 {
+    width: 100%;
+    position: relative;
+}
+.seccion1 img {
+    max-width: 100%;
+}
+
+.seccion1 h2 {
+    position: absolute;
+    z-index: 9;
+    color: white;
+    top: calc(50% - 18px);
+    left: calc(50% - 106px);
+}
