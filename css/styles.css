@@ -21,3 +21,32 @@
   top: calc(50% - 18px);
   left: calc(50% - 106px);
   text-shadow: 10px 10px 10px black; }
+
+.seccion2 {
+  margin-top: 5%;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%; }
+
+.seccion2 h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 5%; }
+
+.seccion2_1 {
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem; }
+
+.seccion2_1_1 {
+  display: flex;
+  align-items: center;
+  gap: 1%; }
+
+.imagenSvg {
+  width: 50px; }
+
+footer {
+  margin-top: 5%;
+  text-align: center; }
