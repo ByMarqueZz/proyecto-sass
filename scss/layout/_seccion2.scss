@@ -3,26 +3,26 @@
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
-}
-
-.seccion2 h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 5%;
+    & h2 {
+        @include h2style;
+    }
 }
 
 .seccion2_1 {
     margin-top: 2%;
-    display: grid;
-    grid-template-columns: auto auto;
+    @include gridPosition();
     gap: 1rem;
 }
 .seccion2_1_1 {
-    display: flex;
-    align-items: center;
-    gap: 1%;
+    @include flexPosition(row, center, center, 1rem);
 }
 
 .imagenSvg {
     width: 50px
+}
+
+@media screen and (max-width: 768px) {
+    .seccion2_1_1 {
+        @include flexPosition(column, center, center, 1rem);
+    }
 }

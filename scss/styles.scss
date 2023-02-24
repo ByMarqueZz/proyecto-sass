@@ -1,15 +1,16 @@
 @import './variables';
 @import './mixin';
-// @import './base';
+@import './base';
 
 @import 'layout/header';
+@import 'layout/nav';
+// home
 @import 'layout/seccion1';
 @import 'layout/seccion2';
 @import 'layout/seccion3';
-// @import 'layout/navigation';
+@import 'layout/seccion4';
+// village
+@import 'layout/village';
+// details
+@import 'layout/villageDetails';
 @import 'layout/footer';
-
-// @import 'componentes/logo';
-// @import 'componentes/heading';
-// @import 'componentes/product';
-// @import 'componentes/footing';

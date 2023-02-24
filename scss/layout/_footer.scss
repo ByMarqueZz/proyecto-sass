@@ -1,4 +1,7 @@
 footer {
     margin-top: 5%;
     text-align: center;
+    background-color: gray;
+    padding-top: 2%;
+    @include flexPosition(row, space-around, center, 1rem);
 }

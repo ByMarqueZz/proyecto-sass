@@ -1,4 +1,11 @@
 .seccion3 {
     margin-top: 5%;
     width: 100%;
+    @include flexPosition(row, center, center, 1rem);
+}
+
+@media screen and (max-width: 768px) {
+    .seccion3 {
+        @include flexPosition(column, center, center, 1rem);
+    }
 }

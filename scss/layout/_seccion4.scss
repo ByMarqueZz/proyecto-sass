@@ -1,0 +1,23 @@
+.seccion4 {
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
+    & h2 {
+        @include h2style;
+    }
+    &_reviews {
+        @include flexPosition(row, center, center, 2rem);
+    }
+}
+.card {
+    width: 18rem;
+    max-width: 400px;
+}
+
+@media screen and (max-width: 768px) {
+    .seccion4 {
+        &_reviews {
+            @include flexPosition(column, center, center, 2rem);
+        }
+    }
+}

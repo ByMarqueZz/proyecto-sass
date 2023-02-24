@@ -1,0 +1,31 @@
+.resultsVillages {
+    text-align: center;
+    @include flexPosition(column, center, center, 1rem);
+    width: 100%;
+    margin-top: 5%;
+    &-village {
+        padding: 1rem;
+        @include flexPosition(row, center, center, 1rem);
+        &-image-div {
+            max-width: 400px;
+        }
+        &-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &-info div {
+            @include flexPosition(row, center, center, 1rem);
+            max-width: 100%;
+        }
+    }
+}
+
+// media query menos 500px
+@media (max-width: 500px) {
+    .resultsVillages {
+        &-village {
+            @include flexPosition(column, center, center, 1rem);
+        }
+    }
+}

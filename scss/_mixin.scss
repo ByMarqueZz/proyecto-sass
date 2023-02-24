@@ -1,25 +1,27 @@
-@mixin flexposition($direction:row, $justifycontent:center, $alignitem:center) {
+@mixin flexPosition($direction:row, $justifycontent:center, $alignitem:center, $gap:0) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justifycontent;
     align-items: $alignitem;
+    gap: $gap;
 }
 
-@mixin navigation() {
-    &-list {
-        @include flexposition(row, space-around, center);
-        height: 100%;
-    }
-    &-item {
-        list-style-type: none;
-    }
-    &-link {
-        color: color(primary);
-        font-size: size(xs);
-        text-decoration: none;
-        transition: all .5s;
-        &-hover {
-            color: lighten(color(quaternary), 10%);
-        }
-    }
+@mixin gridPosition($gridtemplatecolumns:auto auto) {
+    display: grid;
+    grid-template-columns: $gridtemplatecolumns;
+}
+
+@mixin centrateText() {
+    // centra un texto en un div con position: relative
+    position: absolute;
+    color: white;
+    top: calc(50% - 18px);
+    left: calc(50% - 106px);
+    z-index: 9;
+}
+
+@mixin h2style {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 5%;
 }
